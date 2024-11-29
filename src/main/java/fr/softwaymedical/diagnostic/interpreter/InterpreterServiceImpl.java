@@ -8,7 +8,9 @@ public class InterpreterServiceImpl implements InterpreterService {
             return "Cardiologie, Traumatologie";
         if (healthIndex % 3 == 0)
             return "Cardiologie";
-        return  "Traumatologie";
+        if (healthIndex % 5 == 0)
+            return "Traumatologie";
+        return  "";
     }
 
 }
