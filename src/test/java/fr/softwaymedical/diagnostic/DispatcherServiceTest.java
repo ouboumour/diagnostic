@@ -1,6 +1,8 @@
 package fr.softwaymedical.diagnostic;
 
 import fr.softwaymedical.diagnostic.interpreter.InterpreterService;
+import fr.softwaymedical.diagnostic.monitor.MonitorService;
+import fr.softwaymedical.diagnostic.sensor.SensorService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
