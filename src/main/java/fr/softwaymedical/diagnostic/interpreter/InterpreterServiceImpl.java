@@ -4,7 +4,11 @@ public class InterpreterServiceImpl implements InterpreterService {
 
     @Override
     public String getMedicalUnit(int healthIndex) {
-        return healthIndex % 3 == 0 ? "Cardiologie" : "Traumatologie";
+        if (healthIndex % 3 == 0 && healthIndex % 5 == 0)
+            return "Cardiologie, Traumatologie";
+        if (healthIndex % 3 == 0)
+            return "Cardiologie";
+        return  "Traumatologie";
     }
 
 }
