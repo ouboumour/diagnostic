@@ -16,4 +16,9 @@ public class InterpreterServiceImplTest {
         Assertions.assertEquals("Cardiologie", interpreterService.getMedicalUnit(33));
     }
 
+    @Test
+    public void givenAMultipleOfFiveButNotThreeHI_whenGettingMedialUnit_thenReturnTraumatology() {
+        Assertions.assertEquals("Traumatologie", interpreterService.getMedicalUnit(55));
+    }
+
 }
